@@ -13,7 +13,7 @@
 
             <div class="card-body">
 
-                <div v-for="message in messages" v-bind:key="message.id">
+                <div v-for="message in messages" v-bind:key="message.id" class="message-display">
 
                     <strong>{{message.sender}}:</strong> <span>{{message.content}}</span>
 
@@ -43,7 +43,7 @@
 </template>
 <script>
     export default {
-
+        name: 'Chat',
         data(){
 
             console.log("This?", this);
